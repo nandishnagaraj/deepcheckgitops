@@ -40,7 +40,7 @@ def download_titanic_file(filename):
 
     except botocore.exceptions.ClientError as e: 
         if e.response['Error']['Code'] == "404":
-            print("The object does not exist.")
+            print("The object does not exist. ")
         else:
             raise e
 
